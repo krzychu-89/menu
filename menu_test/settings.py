@@ -90,11 +90,11 @@ WSGI_APPLICATION = 'menu_test.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dmz_kl_test',
-        'USER': 'mdm',
-        'PASSWORD': 'mdm-core',
-        'HOST': '135.239.18.238',
-        'PORT': '5002',
+        'NAME': 'nazwa_bazy',
+        'USER': 'user',
+        'PASSWORD': 'haslo',
+        'HOST': 'adres_serwera_bazy',
+        'PORT': 'port_bazy',
     }
 }
 
@@ -138,7 +138,7 @@ USE_TZ = True
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://135.239.18.238:5694/1",
+        "LOCATION": "redis://adres_redisa:port_redisa/1",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient"
         },
