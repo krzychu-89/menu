@@ -11,12 +11,12 @@ https://redis.io/download
 3) ustawić baze danych w settings.py
 ustawić adres i port redisa w settingsach
 
-4) wygenerowanie danych:
-python manage.py migrate
-python manage.py generate_data
-python manage.py createsuperuser i stworzyć użytkownika z dostępem do panelu admina
+4) wygenerowanie danych:<br />
+python manage.py migrate<br />
+python manage.py generate_data<br />
+python manage.py createsuperuser i stworzyć użytkownika z dostępem do panelu admina<br />
 
-5) można uruchomić runserwerem, 
+5) można uruchomić runserwerem, <br />
 Panel Admina dostepny pod standardową ściężką .../admin
 
 
