@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}
+   Menu
+{% endblock %}
+{% block content %}
+<script>var entries_per_page={{ entries_per_page }}</script>
+<script src="{% static 'js/emenu/main.js' %}"></script>
+
+<div class="container"><h1>Menu</h1></div>
+
+<div class="container">
+<div><button class="btn btn-primary btn-lg button_margin rounded_corners"
+             onclick="get_menu()">Powrót</button></div>
+
+
+<div class="jumbotron">
+<div id="main_div_id" class="main_div">
+{#{% include menu_template with menu_data=menu_data.menu_data %}#}
+</div>
+</div>
+
+
+</div>
+
+
+{% endblock %}

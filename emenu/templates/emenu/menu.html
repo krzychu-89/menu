@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<script>
+var menu_data = {{ menu_data|safe }};
+</script>
+<script src="{% static 'js/emenu/main.js' %}"></script>
+
+<table id="dynamic_table_id" class="table table-bordered">
+<thead>
+  <tr>
+    <th id="menu_id">#</th>
+    <th id="menu_name">Nazwa</th>
+    <th id="menu_desc" class="smp-not-sortable">Opis</th>
+    <th id="menu_cnt">Ilość dań</th>
+  </tr>
+</thead>
+
+<tbody id="dynamic_body">
+</tbody>
+</table>

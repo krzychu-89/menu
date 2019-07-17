@@ -1,0 +1,24 @@
+
+    <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nazwa</th>
+        <th>Opis</th>
+        <th>Czas przygotowania</th>
+        <th>Danie Wegetariańskie</th>
+      </tr>
+    </thead>
+
+    {% for dish in dishes %}
+    <tbody>
+        <tr>
+         <td>{{ dish.id }}</td>
+         <td>{{ dish.name }}</td>
+         <td>{{ dish.description }}</td>
+         <td>{{ dish.preparation_time }}</td>
+         <td>{{ dish.is_vegetarian }}</td>
+        </tr>
+    </tbody>
+    {% endfor %}
+    </table>

@@ -1,0 +1,30 @@
+h1 {
+    background: #3fb3d5;
+    color:white;
+    font-family: "Great Vibes", cursive;
+    font-size: 165px;
+    line-height: 160px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    text-align: center;
+    text-shadow: 0 1px 1px #fff;
+    padding-bottom: 5px;
+}
+
+
+
+body {
+    background: url("tlo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rounded_corners{
+    border-radius: 10px;
+}
+
+.button_margin{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
